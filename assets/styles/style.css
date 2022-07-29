@@ -42,7 +42,7 @@ p{
 
 .nav h1 a{
     font-family: 'Oswald', sans-serif;
-    color: #96746b;
+    color: #D4402B;
     text-decoration: none;
 }
 
@@ -61,13 +61,19 @@ p{
 .nav ul a{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #312a26;
+    color: #2BBFD4;
+    text-decoration: none;
+}
+.nav ul a:hover{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #D4402B;
     text-decoration: none;
 }
 
 /* (2) Banner Area */
 .banner{
-    background-image: url('../images/banner-bg.jpg');
+    background-image: url('../images/animal-banner.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -83,15 +89,25 @@ p{
     width: 45%;
 }
 
+.banner-text a:hover{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #D4402B;
+    text-decoration: none;
+    
+}
+
 .banner-text h2{
-    color: #c7a17a;
+    color: #D4402B;
     font-size: 4em;
     text-transform: uppercase;
+    text-shadow: 3px 3px 6px #55CCDD;
 }
 
 /* put span after h2 as it is inside the h2 tag */
 .banner-text h2 span{
-    color: #96746b;
+    color: #2BBFD4;
+    text-shadow: 3px 3px 6px #DD6655;
 }
 
 .banner-text p{
@@ -118,7 +134,7 @@ p{
 }
 
 .ads-items {
-    width: 48.5%;
+    width: 30%;
     float: left;
     height: 350px;
     background-size: cover;
@@ -129,12 +145,20 @@ p{
 
 /* add class name to <div class="ads-items ads-item#"> in html to add different images */
 .ads-item1 {
-    margin-right: 3%;
-    background-image: url('../images/ads-img1.jpg');
+    margin-right: 4%;
+    background-position: left;
+    background-image: url('../images/seniordog.jpeg');
 }
 
 .ads-item2 {
-    background-image: url('../images/ads-img2.jpg');
+    background-image: url('../images/teeth.jpeg');
+    background-position: left;
+    margin-right: 4%;
+}
+
+.ads-item13 {
+    background-image: url('../images/puppydog.jpeg');
+
 }
 
 .ads-text{
@@ -183,7 +207,7 @@ p{
 .section-header hr{
     background-color: #c7a17a;
     height: 2px;
-    width: 25%;
+    width: 27%;
     margin: auto;
 }
 
@@ -207,18 +231,18 @@ p{
 .merch-items img{
     width: 100%;
     height: 350px;
-    object-fit: cover;
+    object-fit: fit;
 }
 
 /* (5) Discount Area */
 .discount {
     width: 85%;
     margin: 4em auto;
-    background-image: url('../images/discount-img.jpg');
+    background-image: url('../images/dogtoy.jpeg');
     background-size: cover;
     height: 350px;
     position: relative;
-    background-position: center;
+    background-position: 50% 30%;
 }
 
 .discount-text {
@@ -249,36 +273,80 @@ p{
     display: inline-block;
     padding: 1em;
     background-color: rgba(255, 255, 255, .5);
-    color: #312a26;
+    color: #2BBFD4;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin-top: 1em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a:hover {
+    color: #D4402B;
 }
 
 /* (7) Ads Area */
 /* Add these classes to ads items to insert diffferent images. */
 
 .ads-item3 {
-    margin-right: 3%;
-    background-image: url('../images/ads-img3.jpg');
+    margin-right: 5%;
+    background-image: url('../images/hotel.jpeg');
 }
 
 .ads-item4 {
-    
-    background-image: url('../images/ads-img4.jpg');
+    margin-right: 5%;
+    background-size: cover;
+    background-position: right;
+    background-image: url('../images/organic.jpeg');
 }
 
 .ads-item5 {
-    margin-right: 3%;
-    background-image: url('../images/ads-img5.jpg');
+    margin-right: 0;
+    background-image: url('../images/trimming.jpeg');
 }
 
 .ads-item6 {
-    background-image: url('../images/ads-img6.jpg');
+    clear: both;
+    background-image: url('../images/recommend.jpeg');
+    width: 50%;
+    position:relative;
+    left: 25%;
+}
+
+.ads-text a:hover{
+    color: #D4402B;
+}
+
+/* video Area */
+.videoattach{
+    width: 85%;
+    margin: 4em auto;
+}
+
+iframe {
+    margin-top: 2em;
+    background-color: #FFF;
+    float: left;
+    width: 49.5%;
+    padding: 2px;
+    margin-bottom: 2em;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videoattach h2{
+    text-align: center;
+}
+
+.tips ul li{
+    text-align: center;
+    list-style: none;
 }
 
 /* (8) Reservation Area */
 .reservation {
+    content: "";
+    clear: both;
     width: 85%;
     margin: 4em auto;
 }
@@ -294,7 +362,7 @@ form {
     width: 49.5%;
     border-radius: 5px;
     padding: 2em;
-    height: 650px;
+    height: 750px;
 }
 
 .form-group:nth-child(1) {
@@ -354,18 +422,24 @@ form h3::after{
 }
 
 form input[type="submit"] {
-    background-color: #c7a17a;
+    background-color: #D4402B;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+.note span{
+    color: #D4402B
+}
+
 /* (9)Footer Area */
 .footer {
-    background-image: url('../images/footer-img.jpg');
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("../images/grenn.jpeg");
     background-size: cover;
     background-position: center;
     padding-top: 2em;
     padding-bottom: 2em;
+    width: 100%;
+    height: auto;
 }
 
 .footer-contents {
@@ -387,23 +461,24 @@ form input[type="submit"] {
 .footer-widgets h3{
     color: #FFF;
     text-transform: uppercase;
-    text-shadow: 3px 3px 6px #312a26;
+    text-shadow: 3px 3px 6px black;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .footer-widgets h4{
     color: #FFF;
+    text-shadow: 3px 3px 6px black;
 }
 
 .footer-widgets p{
-    color: #c7a17a;
+    color: #D4402B;
 }
 
 .footer td, th{
     color: #FFF;
     font-family: 'Raleway', sans-serif;
-    text-overflow: 3px 3px 6px #312a26;
+    text-overflow: 3px 3px 6px gray;
 }
 
 .footer-form *{
@@ -412,7 +487,7 @@ form input[type="submit"] {
 
 .footer-social{
     color: #FFF;
-    background-color: #19100f;
+    background-color: #2BBFD4;
     overflow: auto;
     padding: 1em 7.5%;
 }
